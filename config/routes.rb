@@ -1,6 +1,6 @@
 SampleApp::Application.routes.draw do
-  #get "pages/contact"
   get "contact", to: "pages#contact", as: :contact
+  root :to => 'pages#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
